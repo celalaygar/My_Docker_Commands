@@ -6,6 +6,7 @@ container oluşturur ve çalıştırır
 ``` 
 docker container run --name somex -d -p 8080:8080 nginx
 docker container run -d --name wss -p 80:80 httpd
+docker container run -d -p 3000:3000 --name server node
 ``` 
 container oluşturur, çalıştırır ve bash e giriş yapar
 ``` 
@@ -23,12 +24,16 @@ docker container ls -a
 containeri durdurur
 ``` 
 docker stop container
+docker container stop ws proxy db
 ``` 
 containeri durdurduktan sonra siler
 ``` 
 docker rm 5c1a
 ``` 
-
+container loglarına bakar
+``` 
+docker container logs db
+``` 
 docker-compose.yml dosyasıı sayesınde container kurar
 ``` 
 docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spring-mongo/src/main/resources/docker-compose.yml up -d
