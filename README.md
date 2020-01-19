@@ -28,11 +28,12 @@ docker container ls -a
 ``` 
 containeri durdurur
 ``` 
-docker stop container
+docker stop container_name
 docker container stop ws proxy db
 ``` 
 containeri durdurduktan sonra siler
 ``` 
+docker rm container_name
 docker rm 5c1a
 ``` 
 container loglarına bakar
