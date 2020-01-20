@@ -10,28 +10,27 @@ docker container run -d -p 3000:3000 --name server node
 docker container run -d -p 27017:27017 --name db -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=pass mongo
 docker container run --publish 5050:5050 --detach --name ubuntu ubuntu
 docker container run --publish 60:60 --detach --name ubuntu ubuntu
-
 ``` 
-container oluşturur, çalıştırır ve bash e giriş yapar
+Container oluşturur, çalıştırır ve bash e giriş yapar
 ``` 
 docker container run -it --name ws2 nginx bash
 ``` 
-container çalıştırır
+Container çalıştırır
 ``` 
 docker run --name some-mongo -d mongo:latest
 docker containner run ubuntu
 ``` 
-containerleri gösterir
+Containerleri gösterir
 ``` 
 docker container ls
 docker container ls -a
 ``` 
-containeri durdurur
+Containeri durdurur
 ``` 
 docker stop container_name
 docker container stop ws proxy db
 ``` 
-containeri durdurduktan sonra siler
+Containeri durdurduktan sonra siler
 ``` 
 docker rm container_name
 docker rm 5c1a
@@ -49,7 +48,6 @@ docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spr
 ``` 
 docker network connect NETWORK_NAME CONTAİNER_NAME
 ``` 
-
 networkleri gösterir
 ``` 
 docker network ls
