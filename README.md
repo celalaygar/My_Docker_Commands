@@ -36,7 +36,7 @@ containeri durdurduktan sonra siler
 docker rm container_name
 docker rm 5c1a
 ``` 
-container loglarına bakar
+Container loglarını görüntüleme
 ``` 
 docker container logs db
 ``` 
