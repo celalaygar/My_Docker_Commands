@@ -18,7 +18,7 @@ docker container run -it --name ws2 nginx bash
 Container çalıştırır
 ``` 
 docker run --name some-mongo -d mongo:latest
-docker containner run ubuntu
+docker container run ubuntu
 ``` 
 Containerleri gösterir
 ``` 
