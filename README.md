@@ -53,9 +53,19 @@ docker network create --driver bridge redmine_network
 Bir containeri bir networke bağlar.
 ``` 
 docker network connect NETWORK_NAME CONTAİNER_NAME
+docker network connect bridge ubuntu1
 docker network connect multi-host-network container1
 ``` 
 networkleri gösterir.
 ``` 
 docker network ls
+``` 
+Network’ün detayları
+``` 
+docker network inspect bridge
+docker network inspect host
+```
+Containeri networkten koparır.
+``` 
+docker network disconnect network_name container_name
 ``` 
