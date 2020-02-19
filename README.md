@@ -45,10 +45,15 @@ docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spr
 ``` 
 
 ### Docker Network
+Bir ağ oluşlturur.
+``` 
+docker network create --driver bridge redmine_network
+``` 
+Bir containeri bir networke yerleştirir.
 ``` 
 docker network connect NETWORK_NAME CONTAİNER_NAME
 ``` 
-networkleri gösterir
+networkleri gösterir.
 ``` 
 docker network ls
 ``` 
