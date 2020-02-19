@@ -1,6 +1,5 @@
 # My_Docker_Commands
 
-
 ### Docker Container
 container oluşturur ve çalıştırır
 ``` 
@@ -25,6 +24,10 @@ Containerleri gösterir
 docker container ls
 docker container ls -a
 ``` 
+Çalışan containerları gösterir
+```
+docker ps
+```
 Containeri durdurur
 ``` 
 docker stop container_name
@@ -39,11 +42,10 @@ Container loglarını görüntüleme
 ``` 
 docker container logs db
 ``` 
-docker-compose.yml dosyasıı sayesınde container kurar
+Docker-compose.yml dosyasıı sayesınde container kurar
 ``` 
 docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spring-mongo/src/main/resources/docker-compose.yml up -d
 ``` 
-
 ### Docker Network
 Bir ağ oluşlturur.
 ``` 
@@ -56,12 +58,13 @@ docker network connect NETWORK_NAME CONTAİNER_NAME
 docker network connect bridge ubuntu1
 docker network connect multi-host-network container1
 ``` 
-networkleri gösterir.
+Networkleri gösterir.
 ``` 
 docker network ls
 ``` 
 Network’ün detayları
 ``` 
+docker network inspect my_network
 docker network inspect bridge
 docker network inspect host
 ```
