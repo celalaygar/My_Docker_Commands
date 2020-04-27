@@ -49,7 +49,11 @@ docker container logs db
 ``` 
 Docker-compose.yml dosyasıı sayesınde container kurar
 ``` 
-docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spring-mongo/src/main/resources/docker-compose.yml up -d
+docker-compose -f c:/Users/aygar/...../src/main/resources/docker-compose.yml up -d
+``` 
+Containerde bash e girer.
+``` 
+docker-compose exec -it CONTAINER_NAME bash
 ``` 
 ### Docker Network
 Bir ağ oluşlturur.
