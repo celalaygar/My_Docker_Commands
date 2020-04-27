@@ -28,6 +28,11 @@ docker container ls -a
 ```
 docker ps
 ```
+Container detaylı bilgisini gösterir
+```
+docker container inspect ng
+docker container inspect ubuntu
+```
 Containeri durdurur
 ``` 
 docker stop container_name
@@ -49,14 +54,21 @@ docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spr
 ### Docker Network
 Bir ağ oluşlturur.
 ``` 
+docker network create NETWORK_NAME
+docker network create i_net
 docker network create -d bridge my-bridge-network
 docker network create --driver bridge redmine_network
 ``` 
 Bir containeri bir networke bağlar.
 ``` 
 docker network connect NETWORK_NAME CONTAİNER_NAME
-docker network connect bridge ubuntu1
-docker network connect multi-host-network container1
+docker network connect bridge ubuntu1 
+``` 
+Bir containeri bir networke bağlayarak oluşturma yapar.
+``` 
+docker container run -d --name CONTAINER_NAME --network NETWORK_NAME nginx
+docker container run -d --name inginx --network your_net nginx
+docker container run -d --name apache --network your_net httpd
 ``` 
 Networkleri gösterir.
 ``` 
@@ -66,9 +78,14 @@ Network’ün detayları
 ``` 
 docker network inspect my_network
 docker network inspect bridge
-docker network inspect host
 ```
 Containeri networkten koparır.
 ``` 
-docker network disconnect network_name container_name
+docker network disconnect NETWORK_NAME CONTAİNER_NAME
+docker network disconnect your_net y_ng 
+``` 
+Bir ağ siler.
+``` 
+docker network RM NETWORK_NAME
+docker network rm your_net
 ``` 
