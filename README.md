@@ -93,3 +93,8 @@ Bir ağ siler.
 docker network RM NETWORK_NAME
 docker network rm your_net
 ``` 
+### Docker Hyb
+docker içerisinde image leri kontrol eder
+``` 
+docker image ls
+``` 
