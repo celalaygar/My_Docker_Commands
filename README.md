@@ -98,3 +98,8 @@ docker içerisinde image leri kontrol eder
 ``` 
 docker image ls
 ``` 
+docker içerisinde image detaylı gösterir
+``` 
+docker image inspect nginx
+docker image inspect ubuntu
+``` 
