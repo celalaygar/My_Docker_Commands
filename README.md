@@ -94,11 +94,11 @@ docker network RM NETWORK_NAME
 docker network rm your_net
 ``` 
 ### Docker image
-docker içerisinde image leri kontrol eder
+Docker içerisinde image leri kontrol eder
 ``` 
 docker image ls
 ``` 
-docker içerisinde image detaylı gösterir
+Docker içerisinde image detaylı gösterir
 ``` 
 docker image inspect nginx
 docker image inspect ubuntu
