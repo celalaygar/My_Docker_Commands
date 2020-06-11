@@ -43,6 +43,11 @@ Containeri durdurduktan sonra siler
 docker rm container_name
 docker rm 5c1a
 ``` 
+Container çalışıyorken siler
+``` 
+docker rm -f container_name
+docker rm -f 5c1a
+``` 
 Container loglarını görüntüleme
 ``` 
 docker container logs db
