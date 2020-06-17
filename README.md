@@ -1,7 +1,7 @@
 # My Docker Commands
 
 ### Docker Container
-container oluşturur ve çalıştırır
+Container oluşturur ve çalıştırır
 ``` 
 docker container run --name somex -d -p 8080:8080 nginx
 docker container run -d --name wss -p 80:80 httpd
