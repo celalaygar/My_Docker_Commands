@@ -83,7 +83,7 @@ Networkleri gösterir.
 ``` 
 docker network ls
 ``` 
-Network’ün detayları
+Network’ün detaylarını gösterir
 ``` 
 docker network inspect my_network
 docker network inspect bridge
