@@ -93,7 +93,7 @@ Containeri networkten koparır.
 docker network disconnect NETWORK_NAME CONTAİNER_NAME
 docker network disconnect your_net y_ng 
 ``` 
-Bir ağ siler.
+Bir network siler.
 ``` 
 docker network RM NETWORK_NAME
 docker network rm your_net
