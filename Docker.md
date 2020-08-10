@@ -1,4 +1,5 @@
 # Docker Cheat Sheet (Türkçe)
+orjinal link : https://cafe.ayti.tech/t/docker-cheat-sheet-turkce/228
 ## Container
 #### Container çalıştırma:
 ``` 
