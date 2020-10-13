@@ -38,7 +38,12 @@ Container loglarına bakar
 ``` 
 docker container logs db
 ``` 
-docker-compose.yml dosyasıı sayesınde Container kurar
+docker-compose.yml dosyasıı sayesınde yml dosyasının içerisindeki Container kurar ve ayağa kaldırır.
 ``` 
-docker-compose -f c:/Users/aygar/workspace-spring-tool-suite-4/maven-example/spring-mongo/src/main/resources/docker-compose.yml up -d
+docker-compose -f c:/src/main/resources/docker-compose.yml up -d
+``` 
+yml dosyası ile kurulmuş containerleri ve imageleri silmek isterseniz eğer
+``` 
+docker-compose down --rmi local
+docker images --rmi all
 ``` 
