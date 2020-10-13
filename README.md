@@ -52,9 +52,15 @@ Container loglarını görüntüleme
 ``` 
 docker container logs db
 ``` 
-Docker-compose.yml dosyasıı sayesınde container kurar
+docker-compose.yml dosyasıı sayesınde yml dosyasının içerisindeki Container kurar ve ayağa kaldırır.
 ``` 
 docker-compose -f c:/Users/aygar/...../src/main/resources/docker-compose.yml up -d
+docker-compose -f c:/src/main/resources/docker-compose.yml up -d
+``` 
+yml dosyası ile kurulmuş containerleri ve imageleri siler
+``` 
+docker-compose down --rmi local
+docker images --rmi all
 ``` 
 Containerde bash e girer.
 ``` 
